@@ -2,6 +2,8 @@
 % Packages
 \usepackage{amsmath}
 \usepackage{graphicx}
+\usepackage{fancyheadings}
+%\usepackage{hyperref} % Fixar klickbara länkar
 \usepackage[swedish]{babel}
 \usepackage[
     backend=biber,
@@ -10,11 +12,9 @@
 ]{biblatex}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{hyperref}
-%Källor
+% Källor
 \addbibresource{mall.bib}
-\graphicspath{ {./images/} }
-
+\graphicspath{ {} }
 
 \def\name{Fabian Sigfridsson}
 \def\email{fabian.sigfridsson@elev.ga.ntig.se}
@@ -31,7 +31,7 @@
             \vspace*{1cm}
 
             \Huge
-            \textbf{\Title}
+            \textbf{ \title }
 
             \vspace{0.5cm}
             \LARGE
@@ -39,7 +39,7 @@
 
             \vspace{1.5cm}
 
-            \textbf{\author}
+            \textbf{ \author }
 
             \vfill
 
@@ -65,21 +65,11 @@
 % Om arbetet är långt har det en innehållsförteckning, annars kan den utelämnas
     \tableofcontents
     \newpage
-    \section{Disposition hos ett PM}
-    Ett PM har den mest informella strukturen av de vetenskapliga texterna.
-    Det är egentligen bara en sammanställning av kunskap men för att den ska
-    bli lite lättare att ta sig an brukar det finnas en inledning där syfte
-    och frågeställningar redovisas och en avslutning där du kan dra slutsatser.
-    Rubrikerna kan döpas valfritt, speciellt de som finns i huvuddelen av texten
-    beror på vad den handlar om. Se nedan för ett exempel.
 
     \section{Inledning}
-    Beskriv varför detta ämne är intressant eller viktigt. Vad är syftet med texten?
-    \subsection{frågeställningar}
-    rada upp dina frågor i punktform
+    Vindkraften är en stor del av Sveriges energiförsörjning och sägs vara en helt förnybar energikälla, och vi ska undersöka den.
 
-
-
+    \subsection{Frågeställningar}
     \begin{enumerate}
         \item Hur fungerar ett vindkraftverk?
         \item Vilka miljöpåverkan har ett vindkraftverk lokalt och globalt?
@@ -87,52 +77,26 @@
     \end{enumerate}
 
     \section{Resultat}
-    Här kommer allt med massor av mer rubriker och underrubriker
+
     \subsection{Vindkraft, så fungerar det}
+    Ett vindkraftverk fungerar genom att den omvandlar vindens rörelseenergi först till en mekanisk
+    rotation som sedan går in i en växellåda som ökar rotationshastigheten och som där efter går in i en generator.
+    Generatorn gör då om den mekaniska rörelseenergin till elektrisk energi \parencite[sid 267]{Fraenkel}.
 
     \subsection{Globala miljökonsekvenser av vindkraftverk}
+    Vindkraftverk är både bra och dåliga för miljön. Dom är bra från ett energiproducerande perspektiv
+    för att den genererar inte några växthusgaser efter att man har ställt upp och monterat den.
+
     \subsection{Lokal miljöpåverkan av ett vindkraftverk}
-    \subsection{Vindkraft bidrar till att minska konflikter om oljetillgångar i världen}
-    \subsection{}
+    Vindkraftverk är inte lika bra lokalt sett för att det krävs väldigt mycket resurser som släpper ut mycket växthusgaser.
+    Det bullrar också och det behövs stora områden för vindkraftparker, Och efter att det har tagits ur bruk så lämnas det kvar väldigt mycket betong i marken.
+
+    \subsection{Vindkraftverkens samhällspåverkan}
+    Vindkraftverk är väldigt debaterade i dagens samhälle då det är en jättebra energikälla men också förstör miljön dom är i.
 
     \section{Slutsatser}
-    Här kan du dra slutsatser eller sammanfatta ditt resultat
-
-% Mer saker som du kan ha nytta av.
-
-    \section{Referenser}
-    Referenser i text kan skrivas på två sätt: Enligt \textcite{Jens}
-    kan man använde två typer av referenser, inbäddade i texten eller
-    efter ett fakta \parencite{Fraenkel}. Ett till test för att se hur
-    det ser ut \parencite[sid 55]{fermi}.
-
-    \section{Annat som kan vara bra att veta}
-    Om du vill ha kodstil och få med alla tecken kan du använda verbatim.
-    Då kan du skriva \verb|abcd!"#| utan problem\ldots
-
-    Citat skrivs mellan de konstiga symbolerna \verb|``| och \verb|''|
-    för att de ska se bra ut ``se bra ut!''.
-    \subsection{En underrubrik}
-    \subsubsection{En underunderrubrik}
-    \subsection{Ekvationer}
-    Det är lätt att skriva matematik i \LaTeX
-
-    \begin{equation}
-        F = G \frac{M m}{r^2}
-        \label{eq:grav}
-    \end{equation}
-
-    Ekvation (\ref{eq:grav}) känner ni igen...
-
-    \subsection{figurer}
-    Bilder placeras enklast på detta sätt. Placeringen bestämmer \LaTeX
-    och vi kan bara föreslå (h)är, (t)opp eller (b)otten. Ett utropstecken
-    före tvingar lite mer men inte absolut. I bild \ref{varg} visas en varg
-    \begin{figure}[!h]
-    %    \includegraphics[width=0.8\textwidth]{../images/accelerationTime.png}
-        \caption{Acceleration-tid diagram. Källa: Impuls Fysik 1}
-        \label{varg}
-    \end{figure}
+    Sammanfattat så kan man säga att vindkraftverk är en ganska neutral energikälla då den ger helt koldioxidfri energi,
+    men samtidigt stör naturen runt om sig väldigt mycket.
     \printbibliography
 
 \end{document}
