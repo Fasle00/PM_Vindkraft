@@ -12,6 +12,7 @@
 ]{biblatex}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{hyperref}
 % Källor
 \addbibresource{mall.bib}
 \graphicspath{ {} }
@@ -21,8 +22,15 @@
 \def\foottitle{PM Vindkraft}
 \title{PM Vindkraft \\ \small Fysik 1}
 
-\author{\name}
+\author{Fabian Sigfridsson}
 \date{\today}
+\lfoot{\footnotesize{\name \\ \email}}
+\rfoot{\footnotesize{\today}}
+\lhead{\sc\footnotesize\foottitle}
+\rhead{\nouppercase{\sc\footnotesize\leftmark}}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.2pt}
+\renewcommand{\footrulewidth}{0.2pt}
 
 \begin{document}
 
@@ -31,7 +39,7 @@
             \vspace*{1cm}
 
             \Huge
-            \textbf{ \title }
+            \textbf{PM Vindkraft \\ \small Fysik 1}
 
             \vspace{0.5cm}
             \LARGE
@@ -39,7 +47,7 @@
 
             \vspace{1.5cm}
 
-            \textbf{ \author }
+            \textbf{Fabian Sigfridsson}
 
             \vfill
 
