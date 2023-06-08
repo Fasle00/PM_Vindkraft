@@ -1,0 +1,14 @@
+[0] Config.pm:306> INFO - This is Biber 2.18
+[0] Config.pm:309> INFO - Logfile is 'pmmall.blg'
+[209] biber-MSWIN64:340> INFO - === 
+[304] Biber.pm:418> INFO - Reading 'pmmall.bcf'
+[429] Biber.pm:978> INFO - Found 1 citekeys in bib section 0
+[452] Biber.pm:4401> INFO - Processing section 0
+[477] Biber.pm:4592> INFO - Looking for bibtex file 'mall.bib' for section 0
+[550] bibtex.pm:1713> INFO - LaTeX decoding ...
+[565] bibtex.pm:1518> INFO - Found BibTeX data source 'C:\code\Java\Intellij\PM_Vindkraft\src\mall.bib'
+[796] UCollate.pm:68> INFO - Overriding locale 'sv-SE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[796] UCollate.pm:68> INFO - Overriding locale 'sv-SE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[797] Biber.pm:4221> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'sv-SE'
+[800] bbl.pm:654> INFO - Writing 'pmmall.bbl' with encoding 'UTF-8'
+[801] bbl.pm:757> INFO - Output to pmmall.bbl
